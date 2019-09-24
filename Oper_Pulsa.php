@@ -3,7 +3,7 @@
             $api_key = "api_key";
             $target = "080000000";
             // end api data
-//SCRIPT AUTO OPER(ORDER SOSMED) NESPEDIA BY ADRIAN57
+//SCRIPT AUTO OPER(ORDER PULSA) NESPEDIA BY ADRIAN
            
                 $api_postdata = "api_key=$api_key&action=pemesanan&layanan=$service_id&target=$target";
                 $ch = curl_init();
