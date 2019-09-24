@@ -1,9 +1,9 @@
 $api_key = "api_key_Lo";
-$postdata = "key=$api_key&action=service";
+$postdata = "api_key=$api_key&action=layanan";
  
-//SCRIPT AUTO OPER(SERVICE) NESPEDIA BY ADRIAN57
+//SCRIPT AUTO OPER(SERVICE PULSA) NESPEDIA BY ADRIAN
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://nespedia-panel.com/api/sosial-media/service");
+curl_setopt($ch, CURLOPT_URL, "https://nespedia-panel.com/api/pulsa");
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -16,13 +16,11 @@ $i = 1;
 // get data service
 while($indeks < count($json_result['data'])){
    
-$category=$json_result['data'][$indeks]['category'];
-$id =$json_result['data'][$indeks]['sid'];
-$service = $json_result['data'][$indeks]['service'];
-$min_order =$json_result['data'][$indeks]['min'];
-$max_order = $json_result['data'][$indeks]['max'];
-$price = $json_result['data'][$indeks]['price'];
-$note = $json_result['data'][$indeks]['note'];
+$sid=$json_result['data'][$indeks]['sid'];
+$oprator =$json_result['data'][$indeks]['operator'];
+$service = $json_result['data'][$indeks]['layanan'];
+$price = $json_result['data'][$indeks]['harga'];
+$status = $json_result['data'][$indeks]['status'];
 $indeks++;
 $i++;
 // end get data service
