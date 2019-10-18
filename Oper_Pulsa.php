@@ -20,7 +20,7 @@
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL, "https://nespedia-panel.com/api/pulsa");
                 curl_setopt($ch, CURLOPT_POST, 1);
-                curl_setopt($ch, CURLOPT_POSTFIELDS, $api_postdata);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
                 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
                 $chresult = curl_exec($ch);
