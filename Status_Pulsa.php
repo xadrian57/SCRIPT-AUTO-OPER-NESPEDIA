@@ -1,10 +1,19 @@
+<?php
+//Script Auto Update Status Pulsa Nespedia By Adrian57
+
+//apidata
  $apikey = "api_Key_Lo"; //Api Key
-    $id =  "123"; //id order
+    $id =  123356; //id order
+//end apidata
 
-$api_postdata = "api_key=$apikey&action=status&id=$id";
+//postdata
+$postdata = array('api_key' => $apikey,
+                  'action'  => 'status'
+                  'id'      =>  $id
+                 );
+//end postdata
 
-//SCRIPT AUTO OPER(STATUS PULSA) NESPEDIA BY ADRIAN
-
+//curl
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, 'https://nespedia-panel.com/api/pulsa');
     curl_setopt($ch, CURLOPT_POST, 1);
@@ -14,11 +23,15 @@ $ch = curl_init();
     $chresult = curl_exec($ch);
     curl_close($ch);
     $json_result = json_decode($chresult);
+//end curl
  
+      //check provider apakah nespedia dan memasukan result ke variabel
       if ($provider == "NESPED") {
           $status = $json_result['data']['status'];
           $catatan = $json_result['data']['catatan'];
-          
+      //end check provider
+       
+       //check/ubah status Layanan sesuai database
          if ($status == "Pending") {
             $u_status = "Pending";
          } else if ($status == "Error") {
@@ -28,4 +41,8 @@ $ch = curl_init();
          } else {
              $u_status = "Pending";
          }
+        //end check status
         }
+       
+
+?>
