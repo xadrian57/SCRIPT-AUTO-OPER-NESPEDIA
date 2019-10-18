@@ -12,7 +12,7 @@
                 $postdata = array('api_key' => $api_key,
                                   'action'  => 'pemesanan',
                                   'layanan' => $service_id,
-                                  'target'  => $target"
+                                  'target'  => $target
                                   );
                  //end postdata
                  
