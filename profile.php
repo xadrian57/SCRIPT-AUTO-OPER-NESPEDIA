@@ -18,8 +18,9 @@ $postdata = array('api_key' => $api,
             $json_result = json_decode($chresult, true);
             
             if($json_result['status'] = true) {
-            echo "success";
+            echo "Username : ".$json_result['data']['username'];
+            echo "Saldo : ".$json_result ['data']['saldo'];
             } else {
-            echo "error"
+            echo "GAGAL : ".$json_result['data']['pesan'];
             }
 ?>
