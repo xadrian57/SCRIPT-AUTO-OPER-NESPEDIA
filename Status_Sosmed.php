@@ -1,5 +1,5 @@
 <?php
-//Script Auto Update Status Pulsa Nespedia By Adrian57
+//Script Auto Update Status Pulsa NesPay By Adrian57
 
 //apidata
  $apikey = "api_Key_Lo"; //Api Key
@@ -15,7 +15,7 @@ $postdata = array('api_key' => $apikey,
 
 //curl
 $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://nespedia-panel.com/api/sosial-media');
+    curl_setopt($ch, CURLOPT_URL, 'https://nes-pay.web.id/api/sosial-media');
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
