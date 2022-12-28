@@ -1,5 +1,5 @@
 <?php
-//Script Order Layanan Pulsa Nespedia By Adrian57
+//Script Order Layanan Pulsa NesPay By Adrian57
 
 
 // api data
