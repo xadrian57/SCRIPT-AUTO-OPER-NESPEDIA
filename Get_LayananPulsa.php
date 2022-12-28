@@ -3,28 +3,28 @@
 
 
 
-//api data
-$api_key = "api_key_Lo";
-//end api data
+    //api data
+    $api_key = "api_key_Lo";
+    //end api data
 
-//postdata
-$postdata = array('api_key' => $api_key,
-                  'action'  => 'layanan'
-                  );
-//end postdata
+    //postdata
+    $postdata = array('api_key' => $api_key,
+                      'action'  => 'layanan'
+                      );
+    //end postdata
 
 
-//Curl
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://nespedia-panel.com/api/pulsa");
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-$chresult = curl_exec($ch);
-curl_close($ch);
-$json_result = json_decode($chresult, true);
-//end curl
+    //Curl
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "https://nes-pay.web.id/api/pulsa");
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    $chresult = curl_exec($ch);
+    curl_close($ch);
+    $json_result = json_decode($chresult, true);
+    //end curl
 
 $indeks=0;
 $i = 1;
