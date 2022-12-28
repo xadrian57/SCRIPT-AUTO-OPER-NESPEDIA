@@ -26,7 +26,7 @@ $ch = curl_init();
 //end curl
  
       //check provider apakah nespedia dan memasukan result ke variabel
-      if ($provider == "NESPED-SOSMED") {
+      if ($provider == "NESPAY-SOSMED") {
           $status = $json_result['data']['status'];
           $u_start = ($json_result['data']['start_count'] == null) ? "0" : $json_result['data']['start_count'];
           $u_remains = $json_result['data']['remains'];
