@@ -1,5 +1,5 @@
 <?php
-//Get Service(layanan) Pulsa Nespedia By Adrian57
+//Get Service(layanan) Pulsa NesPay By Adrian57
 
 
 
