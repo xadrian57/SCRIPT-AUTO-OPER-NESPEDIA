@@ -1,5 +1,5 @@
 # Auto Oper
-Script Auto Oper Nespedia
+Script Auto Oper NesPay
 Get (Mendapatkan Layanan)
 Order (Membuat Pesanan)
 Status (Mengecek Status Orderan)
@@ -15,4 +15,4 @@ Price Oper 35k Untuk Get,Order,Status
 
 
 Best Regard
-Nespedia Group
+NesPay Group
