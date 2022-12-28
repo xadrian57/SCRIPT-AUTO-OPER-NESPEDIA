@@ -7,7 +7,7 @@ $postdata = array('api_key' => $api,
                  );
                  
      $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL,"https://nespedia-panel.com/api/profile");
+            curl_setopt($ch, CURLOPT_URL,"https://nes-pay.web.id/api/profile");
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
